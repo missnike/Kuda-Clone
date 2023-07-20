@@ -7,7 +7,9 @@ import BottomTab from './BottomTab';
 const AppStack = () => {
   const Stack = createNativeStackNavigator();
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{headerShown: false}}
+      initialRouteName="BottomTabs">
       <Stack.Screen name="BottomTab" component={BottomTab} />
     </Stack.Navigator>
   );
